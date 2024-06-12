@@ -855,6 +855,16 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
+.bg-papayawhip-light {
+  --tw-bg-opacity: 1;
+  background-color: rgb(254 244 228 / var(--tw-bg-opacity));
+}
+
+.bg-papayawhip-dark {
+  --tw-bg-opacity: 1;
+  background-color: rgb(254 229 188 / var(--tw-bg-opacity));
+}
+
 .p-3 {
   padding: 0.75rem;
 }
@@ -994,6 +1004,34 @@ video {
   color: rgb(148 163 184 / var(--tw-text-opacity));
 }
 
+.text-papayawhip-light {
+  --tw-text-opacity: 1;
+  color: rgb(254 244 228 / var(--tw-text-opacity));
+}
+
+.text-papayawhip-dark {
+  --tw-text-opacity: 1;
+  color: rgb(254 229 188 / var(--tw-text-opacity));
+}
+
+.text-\[\] {
+  color: ;
+}
+
+.text-\[\#\] {
+  color: #;
+}
+
+.text-\[\#ffe\] {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 238 / var(--tw-text-opacity));
+}
+
+.text-\[\#ffefd5\] {
+  --tw-text-opacity: 1;
+  color: rgb(255 239 213 / var(--tw-text-opacity));
+}
+
 .underline {
   text-decoration-line: underline;
 }
@@ -1024,24 +1062,6 @@ video {
 
 .section-min-height {
   min-height: calc(100vh - 68px)
-}
-
-.toggle-btn>div::after {
-  --tw-translate-y: 0px;
-  --tw-rotate: -45deg;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.toggle-btn>div::before {
-  --tw-translate-y: 0px;
-  --tw-rotate: 45deg;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.toggle-btn>div {
-  --tw-rotate: 720deg;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-  background-color: transparent;
 }
 
 .before\:absolute::before {
@@ -1344,7 +1364,7 @@ video {
   }
 }
 
-@media (min-aspect-ratio: 13/20) {
+@media (max-aspect-ratio: 13/20) {
   .tallscreen\:section-min-height {
     min-height: calc(100vh - 68px)
   }
